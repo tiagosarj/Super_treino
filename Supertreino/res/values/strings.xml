@@ -14,5 +14,17 @@
     <string name="genero_atleta">Gênero</string>
     <string name="bt_salvar">Salvar</string>
     <string name="title_activity_dietas">DietasActivity</string>
+    <string name="title_activity_add_edit_alimento">AddEditAlimentoActivity</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="title_nome">Nome</string>
+    <string name="title_fonte">Fonte</string>
+    <string name="title_carboidrato">Carboidrato</string>
+    <string name="title_proteina">Proteína</string>
+    <string name="title_gordura">Gordura</string>
+    <string name="title_calorias">Calorias</string>
+    <string name="title_gramas">grs</string>
+    <string name="salvar">Salvar</string>
+    <string name="adicionar">Adicionar</string>
 
 </resources>
