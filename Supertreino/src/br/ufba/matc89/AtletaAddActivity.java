@@ -38,7 +38,7 @@ public class AtletaAddActivity extends Activity {
 	}
 	
 	public void testeAddDieta(){
-		Intent it = new Intent(this, DietaAddActivity.class);
+		Intent it = new Intent(this, HomeActivity.class);
 		startActivity(it);
 	}
 
