@@ -23,17 +23,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.ufba.matc89.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:windowSoftInputMode="adjustResize|stateVisible" >
-        </activity>
-        <activity
             android:name="br.ufba.matc89.AtletaAddActivity"
             android:label="@string/title_activity_atleta_add" >
         </activity>
         <activity
             android:name="br.ufba.matc89.DietasActivity"
             android:label="@string/title_activity_dietas" >
+        </activity>
+        <activity
+            android:name="br.ufba.matc89.DietaAddActivity"
+            android:label="@string/title_activity_dieta_add" >
         </activity>
     </application>
 

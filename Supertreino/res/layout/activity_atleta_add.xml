@@ -54,6 +54,25 @@
                 android:ems="10" />
 
         </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtEmailAtleta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtEmailAtleta" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+        
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,15 +84,26 @@
                 android:layout_height="wrap_content"
                 android:text="@string/genero_atleta" />
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
+	<RadioGroup
+	    android:id="@+id/radioGenero"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text" >
+                android:text="@string/radBtMasculino" 
+				android:checked="true" />
 
-                <requestFocus />
-            </EditText>
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radBtFeminino" />
+
+	</RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -108,19 +138,37 @@
                 android:text="@string/altura_atleta" />
 
             <EditText
-                android:id="@+id/editText5"
-                android:layout_width="match_parent"
+                android:id="@+id/txtAltura"
+                android:layout_width="106dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text" />
+                android:inputType="text"
+                android:text="@string/inputAltura" />
+
         </LinearLayout>
 
         <Button
             android:id="@+id/bt_save"
-            android:layout_width="wrap_content"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="right"
             android:text="@string/bt_salvar" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical" >
+
+            <ImageButton
+                android:id="@+id/btHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/btHome"
+                android:src="@drawable/home_" />
+
+        </LinearLayout>
+       
     </LinearLayout>
 
 </RelativeLayout>

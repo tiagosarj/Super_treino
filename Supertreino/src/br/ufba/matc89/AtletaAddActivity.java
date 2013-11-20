@@ -1,6 +1,7 @@
 package br.ufba.matc89;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -23,9 +24,8 @@ public class AtletaAddActivity extends Activity {
 		findViewById(R.id.bt_save).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
-					public void onClick(View view) {
-						//TODO implementar salvar Atleta
-						
+					public void onClick(View view) {						
+						testeAddDieta();						
 					}
 				});
 	}
@@ -35,6 +35,11 @@ public class AtletaAddActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.atleta_add, menu);
 		return true;
+	}
+	
+	public void testeAddDieta(){
+		Intent it = new Intent(this, DietaAddActivity.class);
+		startActivity(it);
 	}
 
 }
